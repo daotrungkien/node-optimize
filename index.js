@@ -2,7 +2,7 @@
 
 var Fs = require('fs'),
     Path = require('path'),
-    UglifyJS = require('uglify-js');
+    UglifyJS = require('uglify-es');
 
 /**
  * Checks if a path exists and is a file (not a directory), without throwing any error
