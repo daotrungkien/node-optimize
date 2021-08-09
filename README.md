@@ -1,7 +1,9 @@
-node-optimize
-=============
+node-optimize-es
+================
 
-[![npm Version](https://badge.fury.io/js/node-optimize.png)](https://npmjs.org/package/node-optimize)
+This is a modified version of `node-optimize` at https://github.com/danielgindi/node-optimize for compatibility with ECMAScript 6+. The original project was not updated for years.
+
+[![npm Version](https://badge.fury.io/js/node-optimize-es.png)](https://npmjs.org/package/node-optimize-es)
 
 We all need a tool to optimize a node.js project and create a single `js` file from it, 
 Taking care of `require`s and leaving out `node_modules`.
@@ -36,40 +38,6 @@ Usage:
 * Loading modules which were specified using complex `require` statement (i.e. `require(moduleName + '_' + index)`)
 
 *Note*: Support for `require` of module folders (with parsing of `package.json` etc.) will be added in the future.
-
-## CoffeeScript
-
-If you need support for CoffeScript, simply use Grunt to "compile" your Coffee files, and then run the optimizer on a pure JS project.
-
-## Binary modules
-
-There's no simple way to embed native binary modules (*.node), or modules that depend on other local raw files.
-In case you have a module which is known to have binary files, you should exclude it from optimization, and put it in a known path, or on a private NPM etc.
-
-I've tried to also support squashing `node_modules` for cases where one wants to eliminate the need of an `npm install` in a production project,
-but I have abandon those trials, as it makes no sense:
-In 99% of the cases on of the modules in the `node_modules` tree will have binaries, and `npm install`/`npm update` is a strength anyway as it allows for bugfixes even in a production project.
-
-## Grunt
-
-See [https://github.com/danielgindi/grunt-node-optimize](https://github.com/danielgindi/grunt-node-optimize)
-
-
-## Contributing
-
-If you have anything to contribute, or functionality that you luck - you are more than welcome to participate in this!  
-If anyone wishes to contribute unit tests - that also would be great :-)
-
-## Me
-* Hi! I am Daniel Cohen Gindi. Or in short- Daniel.
-* danielgindi@gmail.com is my email address.
-* That's all you need to know.
-
-## Help
-
-If you want to buy me a beer, you are very welcome to
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G6CELS3E997ZE)
- Thanks :-)
 
 ## License
 
