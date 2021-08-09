@@ -1,6 +1,6 @@
 {
-  "name": "node-optimize",
-  "version": "1.2.3",
+  "name": "node-optimize-es",
+  "version": "1.2.4",
   "description": "Optimize a node project to a single JS file for distribution release.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielgindi/node-optimize"
+    "url": "https://github.com/daotrungkien/node-optimize-es"
   },
   "keywords": [
     "node.js",
@@ -17,14 +17,14 @@
     "distribute",
     "production",
     "uglify",
-    "uglify-js"
+    "uglify-es"
   ],
-  "author": "Daniel Cohen Gindi <danielgindi@gmail.com> (https://github.com/danielgindi)",
+  "author": "Dao Trung Kien <daotrung.kien@gmail.com> (https://github.com/daotrungkien)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danielgindi/node-optimize/issues"
+    "url": "https://github.com/daotrungkien/node-optimize-es/issues"
   },
-  "homepage": "https://github.com/danielgindi/node-optimize",
+  "homepage": "https://github.com/daotrungkien/node-optimize-es",
   "dependencies": {
     "uglify-js": "^2.8.0"
   }
